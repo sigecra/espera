@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-fab vertical="center" horizontal="end" slot="fixed" [routerLink]="['/home']"
+    routerLinkActive="router-link-active">
+    <ion-fab-button color="light">
+      <strong>IR</strong>
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-card class=" ion-float-right card-logo">
+    <img src="../../assets/imagenes/logo.png">
+  </ion-card>
+
+  <ion-card class="card-transparente">
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-text color="light">
+          <h2><strong>GRACIAS </strong></h2>
+          <h2>{{ nombresReg }} </h2>
+        </ion-text>
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-justify">
+      <ion-text color="light">
+        <h3>Aquí te adelantamos algo de información y te contamos que hemos enviado esta
+          información al correo electrónico que nos has facilitado. </h3>
+        <h3>
+          Nos pondremos en contacto con usted muy pronto, Muchas Gracias...
+        </h3>
+        <h3>Síguenos en las Redes Sociales: </h3>
+        <ion-chip outline color="light">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-label><strong>Instagram: globalpilatesgijon</strong></ion-label>
+        </ion-chip>
+        <ion-chip outline color="light">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-label><strong>Facebook: estudioglobalpilatesgijon</strong></ion-label>
+        </ion-chip>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

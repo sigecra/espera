@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Error</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="center" horizontal="end" slot="fixed" [routerLink]="['/']" routerLinkActive="router-link-active">
+    <ion-fab-button color="light">
+      <strong>IR</strong>
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-card class="ion-float-right card-logo">
+    <img src="../../assets/imagenes/logo.png">
+  </ion-card>
+
+  <ion-card class="card-transparente">
+    <ion-card-header>
+      <ion-card-title color="light" class="ion-text-center">
+        <h4><strong>Presentamos</strong></h4>
+        <h4><strong>Inconvenientes de conexión</strong></h4>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-text color="light">
+        <h3>Por favor escribanos o comuníquese por alguna de las siguientes opciones: </h3>
+        <h3>
+          <ion-icon name="mail"></ion-icon> Email:
+        </h3>
+        <h3>
+          <ion-icon name="logo-whatsapp"></ion-icon> Whatsapp:
+        </h3>
+
+        <h3>
+          Nos pondremos en contacto con usted muy pronto, Muchas Gracias...
+        </h3>
+        <ion-chip outline color="light">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-label>Instagram: globalpilatesgijon</ion-label>
+        </ion-chip>
+        <ion-chip outline color="light">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-label>Facebook: estudioglobalpilatesgijon</ion-label>
+        </ion-chip>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

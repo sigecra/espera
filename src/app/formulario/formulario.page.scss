@@ -1,0 +1,83 @@
+ion-content {
+    --background: url("../../assets/imagenes/fondo_formulario.jpeg") no-repeat center/cover fixed;
+    --background-repeat: no-repeat;
+}
+
+ion-select {
+    width: 80%;
+    justify-content: left;
+}
+
+.card-logo {
+    max-width: 80%;
+    width: 30%;
+    position: absolute;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 70%;
+}
+
+.card-transparente {
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    //  background-position: center;
+    //  background-repeat: no-repeat;
+    margin-top: 18%;
+    //   background-size: cover;
+    //   position: relative;
+    opacity: 0.8;
+    align-items: center;
+    align-content: center;
+    padding-right: 1%;
+    padding-left: 1%;
+    vertical-align: top;
+    //  align-self: center;
+    //  height: 80%;
+}
+
+/*ion-item {
+    --min-height: 1px;
+}*/
+
+ion-checkbox {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+ion-text-area {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.background-input {
+    margin-bottom: 0 !important;
+
+    ion-item {
+        --border-color: transparent !important;
+        --highlight-height: 0;
+        --background: none;
+        background: gray;
+        border-radius: 4px;
+        --min-height: 1px;
+
+        ion-label {
+            color: white;
+            font-weight: 100;
+            font-size: 1rem !important;
+        }
+
+        ion-input {
+            --color: white;
+            font-weight: 400;
+
+        }
+    }
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block !important;
+}

@@ -1,27 +1,37 @@
-#container {
-  text-align: center;
+ion-content {
+  --background: url("../../assets/imagenes/pantalla3.jpeg") no-repeat center/cover fixed;
+  --background-repeat: no-repeat;
+}
 
+.card-transparente {
+  max-width: 65%;
+  width: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: grey;
+  //  margin-left: 100;
+  background-size: cover;
+  position: relative;
+  opacity: 0.9;
+  /// margin-top: 35px;
+  margin-top: 6%;
+  vertical-align: middle;
+}
+
+h2 {
+  font-size: 4vmin;
+}
+
+p {
+  font-size: 3vmin;
+}
+
+.card-logo {
+  max-width: 80%;
+  width: 30%;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 70%;
 }

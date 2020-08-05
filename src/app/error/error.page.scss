@@ -1,0 +1,42 @@
+ion-content {
+    --background: url("../../assets/imagenes/pantalla3.jpeg") no-repeat center/cover fixed;
+    --background-repeat: no-repeat;
+}
+
+.card-transparente {
+    max-width: 90%;
+    width: 80%;
+    margin: auto;
+    background-color: grey;
+    //    background-position: center;
+    //   background-repeat: no-repeat;
+    margin-top: 5%;
+    // background-size: cover;
+    position: relative;
+    opacity: 0.9;
+    //  align-items: center;
+    //  align-content: center;
+    padding-top: 6%;
+    height: 90%;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.card-logo {
+    max-width: 90%;
+    width: 30%;
+    position: absolute;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 70%;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 3vmin;
+}
+
+h4 {
+    font-size: 3vmin;
+}

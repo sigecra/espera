@@ -1,20 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<!--<ion-content [fullscreen]="true">-->
+<ion-content>
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">GLOBAL PILATES</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header>  -->
 
-  <div id="container">
+  <!-- <div id="container">
     <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer"
+        href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+
+  <ion-fab vertical="center" horizontal="end" slot="fixed" [routerLink]="['/formulario']"
+    routerLinkActive="router-link-active">
+    <ion-fab-button style="font-size: 22px;" color="light">
+      <strong>IR</strong>
+      <ion-icon name="log-in-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-card class=" ion-float-right card-logo">
+    <img src="../../assets/imagenes/logo.png">
+  </ion-card>
+
+  <ion-card class="card-transparente">
+    <ion-card-header>
+      <ion-card-subtitle>
+        <ion-text color="light">
+          <h2><strong>HOLA ! </strong></h2>
+        </ion-text>
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content class="ion-text-justify">
+      <ion-text color="light">
+        <p>En este momento estamos impartiendo clases, y no podemos atenderte. </p>
+      </ion-text>
+      <ion-text color="light">
+        <p>Lo sentimos mucho, pero si nos dejas tus datos de contacto, estaremos encantados de llamarte a la mayor
+          brevedad posible, para atenderte todo lo bien que se merecen nuestros clientes y todas nuestras visitas. </p>
+      </ion-text>
+      <ion-text color="light">
+        <p> Atenderemos todas tus dudas e inquietudes, e incluso si lo deseas, concretaremos una visita, para que
+          conozcas nuestras instalaciones a fondo.</p>
+        <p>Muchas gracias por tú visita. Hablamos muy pronto </p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
