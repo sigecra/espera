@@ -44,36 +44,12 @@ ion-select {
 ion-checkbox {
     margin-top: 1px;
     margin-bottom: 1px;
+    margin-right: 1px;
 }
 
 ion-text-area {
     margin-top: 1px;
     margin-bottom: 1px;
-}
-
-.background-input {
-    margin-bottom: 0 !important;
-
-    ion-item {
-        --border-color: transparent !important;
-        --highlight-height: 0;
-        --background: none;
-        background: gray;
-        border-radius: 4px;
-        --min-height: 1px;
-
-        ion-label {
-            color: white;
-            font-weight: 100;
-            font-size: 1rem !important;
-        }
-
-        ion-input {
-            --color: white;
-            font-weight: 400;
-
-        }
-    }
 }
 
 .center {

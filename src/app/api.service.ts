@@ -34,6 +34,7 @@ export class ApiService {
     headers.append("Access-Control-Allow-Origin", "*");
     var formData: any = new FormData();
     formData.append("nombres", dataRegistro.nombres);
+    formData.append("apellidos", dataRegistro.apellidos);
     formData.append("telefono", dataRegistro.telefono);
     formData.append("email", dataRegistro.email);
     formData.append("horario", dataRegistro.horario);
@@ -42,7 +43,8 @@ export class ApiService {
     formData.append("key", '12345');
 
     return this.http.post(
-      "https://script.google.com/macros/s/AKfycbyp9HMrWpm6G7OgiGq0Hxeckbid4N9qsE1G9v9D2_hr7vQJw-Ju/exec",
+      //  "https://script.google.com/macros/s/AKfycbyp9HMrWpm6G7OgiGq0Hxeckbid4N9qsE1G9v9D2_hr7vQJw-Ju/exec",
+      "https://script.google.com/macros/s/AKfycbybTL55mNC_qQtG1hAOh407f0GxpwGmF37t68oc9g/exec",
       formData,
     );
   }

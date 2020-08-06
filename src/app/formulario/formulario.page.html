@@ -7,9 +7,9 @@
       <ion-list>
         <ion-item>
           <ion-icon size="small" name="person" item-start></ion-icon>
-          <ion-label>Nombres y Apellidos <span style="color: red;"> *
+          <ion-label>Nombres: <span style="color: red;"> *
             </span> </ion-label>
-          <ion-input required="" formControlName="nombres" placeholder="Ingrese su nombre y apellido"></ion-input>
+          <ion-input required="" formControlName="nombres" placeholder="Ingrese su nombre"></ion-input>
         </ion-item>
         <ng-container *ngFor="let validation of form_messages.nombres">
           <ion-label color="danger"
@@ -17,10 +17,21 @@
             <ion-icon name="information-circle-outline"></ion-icon> {{ validation.message }}
           </ion-label>
         </ng-container>
-
+        <ion-item>
+          <ion-icon size="small" name="person-add" item-start></ion-icon>
+          <ion-label>Apellidos: <span style="color: red;"> *
+            </span> </ion-label>
+          <ion-input required="" formControlName="apellidos" placeholder="Ingrese su apellido"></ion-input>
+        </ion-item>
+        <ng-container *ngFor="let validation of form_messages.apellidos">
+          <ion-label color="danger"
+            *ngIf="registro.get('apellidos').hasError(validation.type) && (registro.get('apellidos').dirty || registro.get('apellidos').touched)">
+            <ion-icon name="information-circle-outline"></ion-icon> {{ validation.message }}
+          </ion-label>
+        </ng-container>
         <ion-item>
           <ion-icon size="small" name="call" item-start></ion-icon>
-          <ion-label> Teléfono <span style="color: red;"> * </span> </ion-label>
+          <ion-label> Teléfono: <span style="color: red;"> * </span> </ion-label>
           <ion-input formControlName="telefono" type="tel" placeholder="Ingrese su número de teléfono"></ion-input>
         </ion-item>
         <ng-container *ngFor="let validation of form_messages.telefono">
@@ -32,7 +43,7 @@
 
         <ion-item class="ion-label1">
           <ion-icon size="small" name="mail" item-start></ion-icon>
-          <ion-label>Mail </ion-label>
+          <ion-label>Mail: </ion-label>
           <ion-input formControlName="email" type="email"></ion-input>
         </ion-item>
         <ng-container *ngFor="let validation of form_messages.email">
@@ -44,7 +55,7 @@
 
         <ion-item>
           <ion-icon size="small" name="time" item-start></ion-icon>
-          <ion-label>Horario preferido <span style="color: red;"> * </span> </ion-label>
+          <ion-label>Horario preferido: <span style="color: red;"> * </span> </ion-label>
           <ion-select interface="popover" placeholder="Seleccione una opción" formControlName="horario">
             <ion-select-option value="M">Mañana</ion-select-option>
             <ion-select-option value="T">Tarde</ion-select-option>
@@ -60,7 +71,7 @@
         <ion-item>
           <ion-label position="floating">
             <ion-icon size="small" name="add-circle" item-start></ion-icon>
-            <span>Nota</span>
+            <span>Nota: </span>
           </ion-label>
           <ion-textarea rows="2" formControlName="nota"> </ion-textarea>
         </ion-item>
@@ -76,7 +87,7 @@
               <ion-col size="1">
                 <ion-checkbox color="light" formControlName="checkbox"></ion-checkbox>
               </ion-col>
-              <ion-col size="11">
+              <ion-col size="10">
                 <ion-label> Acepto <ion-text style="cursor: pointer" (click)="CrearVentana()" color="primary">
                     LOPD
                   </ion-text>

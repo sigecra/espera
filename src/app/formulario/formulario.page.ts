@@ -21,6 +21,15 @@ export class FormularioPage implements OnInit {
         Validators.required,
       ])
     ),
+    apellidos: new FormControl(
+      '',
+      Validators.compose([
+        Validators.maxLength(50),
+        Validators.minLength(3),
+        Validators.pattern('[a-z-A-Z-_ ]*'),
+        Validators.required,
+      ])
+    ),
     telefono: new FormControl(
       '',
       Validators.compose([
@@ -52,9 +61,21 @@ export class FormularioPage implements OnInit {
     ),
   });
 
+
   form_messages = {
     nombres: [
-      { type: 'required', message: 'Nombre y apellido es requerido' },
+      { type: 'required', message: 'Nombre es requerido' },
+      {
+        type: 'maxlength',
+        message: 'No debe tener mas de 35 caracteres',
+      },
+      {
+        type: 'pattern',
+        message: 'Solo debe contener letras',
+      },
+    ],
+    apellidos: [
+      { type: 'required', message: 'Apellido es requerido' },
       {
         type: 'maxlength',
         message: 'No debe tener mas de 35 caracteres',
@@ -96,13 +117,13 @@ export class FormularioPage implements OnInit {
         message: 'Solo debe contener letras, numeros y signos especificos',
       },
     ],
-    checkbox: [{ type: 'required', message: 'Para enviar sus datos Acepte LOPD.' }],
+    checkbox: [{ type: 'required', message: 'Para enviar Acepte LOPD.' }],
   };
 
   constructor(public regService: ApiService, private router: Router, private popover: PopoverController) { }
 
   ngOnInit() {
-    this.registro.reset(this.registro.value);
+    this.registro.reset();
   }
 
   CrearVentana() {
