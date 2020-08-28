@@ -14,6 +14,6 @@ export class ErrorPage implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.router.navigate(['/']);
-    }, 20000);//40s
+    }, 30000);//30s
   }
 }

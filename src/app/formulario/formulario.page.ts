@@ -50,6 +50,7 @@ export class FormularioPage implements OnInit {
       ])
     ),
     horario: new FormControl('', Validators.required),
+    alumno: new FormControl('false',),
     checkbox: new FormControl('false', Validators.requiredTrue),
     nota: new FormControl(
       '',

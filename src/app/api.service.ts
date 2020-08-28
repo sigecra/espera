@@ -27,6 +27,16 @@ export class ApiService {
     });
   }*/
 
+  getTarifa() {
+    let headers = new Headers();
+    headers.append("Accept", "*");
+    headers.append("Content-Type", "application/json");
+    headers.append("Access-Control-Allow-Origin", "*");
+    return this.http.get("https://script.google.com/macros/s/AKfycbxVQ6FeaxxomgEOujAaTkVikHcW0vGSYXoALzB_wqNlcgefvwo/exec",
+    );
+  }
+
+
   postReg(dataRegistro) {
     let headers = new Headers();
     headers.append("Accept", "*");
@@ -38,13 +48,14 @@ export class ApiService {
     formData.append("telefono", dataRegistro.telefono);
     formData.append("email", dataRegistro.email);
     formData.append("horario", dataRegistro.horario);
+    formData.append("alumno", dataRegistro.alumno);
     formData.append("nota", dataRegistro.nota);
     formData.append("lodp", dataRegistro.checkbox);
-    formData.append("key", '1590--ac');
+    formData.append("key", '1590-*-ac');
 
     return this.http.post(
       //  "https://script.google.com/macros/s/AKfycbyp9HMrWpm6G7OgiGq0Hxeckbid4N9qsE1G9v9D2_hr7vQJw-Ju/exec",
-      "https://script.google.com/macros/s/AKfycbybTL55mNC_qQtG1hAOh407f0GxpwGmF37t68oc9g/exec",
+      "https://script.google.com/macros/s/AKfycbxVQ6FeaxxomgEOujAaTkVikHcW0vGSYXoALzB_wqNlcgefvwo/exec",
       formData,
     );
   }
