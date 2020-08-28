@@ -28,7 +28,7 @@ export class InicioPage implements OnInit {
         (data) => { // Success
           console.log(data);
           this.tarifa = data[0]['tarifa'];
-          console.log(this.tarifa);
+          //          console.log(this.tarifa);
           return (this.tarifa)
         },
         (error) => {
