@@ -9,7 +9,7 @@
           <ion-icon size="small" name="person" item-start></ion-icon>
           <ion-label>Nombres: <span style="color: red;"> *
             </span> </ion-label>
-          <ion-input required="" formControlName="nombres" placeholder="Ingrese su nombre"></ion-input>
+          <ion-input required="" formControlName="nombres" placeholder="Escriba su nombre"></ion-input>
         </ion-item>
         <ng-container *ngFor="let validation of form_messages.nombres">
           <ion-label color="danger"
@@ -21,7 +21,7 @@
           <ion-icon size="small" name="person-add" item-start></ion-icon>
           <ion-label>Apellidos: <span style="color: red;"> *
             </span> </ion-label>
-          <ion-input required="" formControlName="apellidos" placeholder="Ingrese su apellido"></ion-input>
+          <ion-input required="" formControlName="apellidos" placeholder="Escriba su apellido"></ion-input>
         </ion-item>
         <ng-container *ngFor="let validation of form_messages.apellidos">
           <ion-label color="danger"
@@ -32,7 +32,7 @@
         <ion-item>
           <ion-icon size="small" name="call" item-start></ion-icon>
           <ion-label> Teléfono: <span style="color: red;"> * </span> </ion-label>
-          <ion-input formControlName="telefono" type="tel" placeholder="Ingrese su número de teléfono"></ion-input>
+          <ion-input formControlName="telefono" type="tel" placeholder="Escriba su número de teléfono"></ion-input>
         </ion-item>
         <ng-container *ngFor="let validation of form_messages.telefono">
           <ion-label color="danger"
@@ -75,7 +75,7 @@
                 <ion-checkbox color="light" formControlName="alumno"></ion-checkbox>
               </ion-col>
               <ion-col size="10">
-                <ion-label> Es Alumno
+                <ion-label> Soy Alumno de Global Pilates (check en caso de estar matriculado)
                 </ion-label>
               </ion-col>
             </ion-row>
@@ -103,7 +103,8 @@
                 <ion-checkbox color="light" formControlName="checkbox"></ion-checkbox>
               </ion-col>
               <ion-col size="10">
-                <ion-label> Acepto <ion-text style="cursor: pointer" (click)="CrearVentana()" color="primary">
+                <ion-label>He leído y acepto la<ion-text style="cursor: pointer" (click)="CrearVentana()"
+                    color="primary">
                     LOPD
                   </ion-text>
                   <ion-icon style="cursor: pointer" (click)="CrearVentana()" name="document-text" item-start></ion-icon>
